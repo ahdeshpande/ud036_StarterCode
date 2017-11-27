@@ -6,7 +6,7 @@ import requests
 from random import shuffle
 
 # API Key for The Movie DB (https://www.themoviedb.org/)
-MOVIE_DB_API_KEY = 'a7d452d8acc58158eb3cba21e8e9fbb2'
+MOVIE_DB_API_KEY = 'you_need_a_TMDb_API_key'
 
 
 def get_movie_data(movie_title):
@@ -74,7 +74,7 @@ def get_video(movie_id):
 try:
     # List of movie names
     movie_list = json.load(open('movies.json'))['movies']
-    
+
     # List of the objects of class Movie
     all_movies = []
 
